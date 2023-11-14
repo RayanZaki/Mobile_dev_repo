@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SlideNumberTPW4</string>
+    <string name="enter_a_positive_number">Enter a positive number</string>
+    <string name="enter_board_size">Enter board size:</string>
+    <string name="generate_puzzle">Generate puzzle</string>
+</resources>

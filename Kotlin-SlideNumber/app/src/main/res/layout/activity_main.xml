@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:orientation="vertical"
+    tools:context=".BoardActivity">
+
+    <LinearLayout
+        android:id="@+id/lv_board"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_gravity="bottom"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        >
+
+        <!-- Define the Back button first -->
+        <Button
+            android:layout_margin="10dp"
+            android:id="@+id/bt_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:padding="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/bt_shuffle" />
+
+        <!-- Define the Shuffle button -->
+        <Button
+            android:layout_margin="10dp"
+            android:id="@+id/bt_shuffle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Shuffle"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bt_back" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
